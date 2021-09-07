@@ -18,8 +18,23 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 INCLUDEPATH += source
 
+SOURCES += \
+    source/controllers/db-controller.cpp \
+    source/data/datadecorators.cpp \
+    source/network/networkaccessmanager.cpp \
+    source/network/serverrequest.cpp \
+    source/model/ct_logue.cpp
+
 HEADERS += \
-    source/Upld_global.h
+    source/Upld_global.h \
+    source/controllers/db-controller.h \
+    source/controllers/i-db-controller.h \
+    source/data/datadecorators.h \
+    source/model/ct_logue.h \
+    source/network/inetworkaccessmanager.h \
+    source/network/iserverrequest.h \
+    source/network/networkaccessmanager.h \
+    source/network/serverrequest.h
 # Default rules for deployment.
 unix {
     target.path = /usr/lib
