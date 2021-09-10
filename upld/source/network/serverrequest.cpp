@@ -1,6 +1,6 @@
 #include "serverrequest.h"
 #include "QJsonDocument"
-namespace upld_lib {
+namespace upld {
 namespace network {
 class ServerRequest::Implementation {
 public:Implementation(ServerRequest *_serverRequest, INetworkAccessManager *_networkAccessManager, const QUrl &_uri):

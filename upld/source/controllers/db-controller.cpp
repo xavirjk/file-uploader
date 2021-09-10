@@ -3,7 +3,7 @@
 #include <QJsonDocument>
 #include <QSqlQuery>
 
-using namespace upld_lib::controllers;
+using namespace upld::controllers;
 
 class DBController::Implementation {
 public:

@@ -3,6 +3,14 @@
 
 #include <QWidget>
 #include <QtWidgets>
+#include "label.h"
+#include "form.h"
+#include "homepane.h"
+#include "downloadpane.h"
+#include "viewfile.h"
+#include <model/ct_logue.h>
+
+using namespace CTLogue::Lib;
 namespace upld {
 namespace ui {
 
@@ -15,15 +23,28 @@ public:
 
     void setUpHome();
 signals:
-    void uploadBtnClicked();
-    void downloadBtcClicked();
-    void homeBtnClicked();
+    void moviesBtnClicked();
+    void tvShowBtcClicked();
+    void booksBtnClicked();
 public slots:
-    void toggleUploadView();
-    void toggleDownloadView();
-    void toggleHomeView();
+    void toggleMoviesView();
+    void toggleTvShowView();
+    void toggleBooksView();
+    void theForm(QString &text );
+    void viewFile(const QString &path);
+    void sendFiles(QString &selected);
+    void filesReceived(QJsonArray &fileNames);
+    void fileDataReceived(const QByteArray &bytes, const QString &name);
+    void displayResMessage(const QString &message);
+    void hideMessage();
 private:
+    CT_Logue *log = new CT_Logue(this);
     QLabel *responseTag = new QLabel;
+    viewPane *pane;
+    DownloadPane *downloadPane;
+    Forms *form;
+    ViewFile *viewFl;
+    HomePane *homePane;
     QHBoxLayout *hbox2,*hbox3;
     QFont font;
 

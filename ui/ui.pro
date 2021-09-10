@@ -7,12 +7,23 @@ qtHaveModule(printsupport): QT += printsupport
 INCLUDEPATH += ../upld/source
 
 SOURCES += \
-   main.cpp \
-   mainview.cpp
-
-HEADERS += \
-    mainview.h
+    downloadpane.cpp \
+    form.cpp \
+    homepane.cpp \
+    label.cpp \
+    main.cpp \
+    mainview.cpp \
+    viewfile.cpp
 
 RESOURCES = stylesheet.qrc
 
+HEADERS += \
+    downloadpane.h \
+    form.h \
+    homepane.h \
+    label.h \
+    mainview.h \
+    viewfile.h
+
+LIBS += -L$$PWD/../builds/CT_Logue/debug -lCT_Logue
 message(dt $$PWD)

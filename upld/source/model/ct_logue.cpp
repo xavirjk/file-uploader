@@ -4,9 +4,9 @@
 #include <QJsonObject>
 #include <QJsonDocument>
 
-using namespace upld_lib::network;
-using namespace upld_lib::controllers;
-using namespace upld_lib::Lib;
+using namespace upld::network;
+using namespace upld::controllers;
+using namespace upld::Lib;
 class CT_Logue::Implementation{
 public:Implementation(CT_Logue *_ct_log):
         cT_Logue(_ct_log)

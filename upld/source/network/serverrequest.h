@@ -13,7 +13,7 @@
 #include "network/IServerRequest.h"
 #include "network/inetworkaccessmanager.h"
 
-namespace upld_lib{
+namespace upld{
 namespace network {
 
 class UPLD_EXPORT ServerRequest : public IServerRequest

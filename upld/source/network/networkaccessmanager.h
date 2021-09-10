@@ -7,7 +7,7 @@
 #include <Upld_global.h>
 #include "network/inetworkaccessmanager.h"
 
-namespace upld_lib {
+namespace upld {
 namespace network {
 
 class UPLD_EXPORT NetworkAccessManager :public INetworkAccessManager

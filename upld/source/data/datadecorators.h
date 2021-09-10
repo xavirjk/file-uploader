@@ -5,7 +5,7 @@
 #include <Upld_global.h>
 #include <QSharedPointer>
 
-namespace upld_lib {
+namespace upld {
 namespace data {
 class DataDecorators : public QObject
 {

@@ -5,7 +5,7 @@
 #include <QUrl>
 #include <Upld_global.h>
 
-namespace upld_lib {
+namespace upld {
 namespace network {
 
 class UPLD_EXPORT IServerRequest: public QObject {

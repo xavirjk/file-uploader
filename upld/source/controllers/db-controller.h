@@ -7,7 +7,7 @@
 #include "i-db-controller.h"
 #include "Upld_global.h"
 
-namespace upld_lib {
+namespace upld {
 namespace controllers {
 class UPLD_EXPORT DBController : public IDBController {
     Q_OBJECT

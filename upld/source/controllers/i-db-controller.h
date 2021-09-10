@@ -7,7 +7,7 @@
 
 #include "Upld_global.h"
 
-namespace upld_lib {
+namespace upld {
 namespace controllers {
 
 class UPLD_EXPORT IDBController : public QObject {

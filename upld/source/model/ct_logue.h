@@ -11,7 +11,7 @@
 #include "network/networkaccessmanager.h"
 #include "data/datadecorators.h"
 
-namespace upld_lib {
+namespace upld {
 namespace Lib {
 
 class UPLD_EXPORT CT_Logue : public data::DataDecorators
