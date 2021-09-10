@@ -19,8 +19,6 @@ public:
 
 public slots:
     void fetchFiles(QJsonArray &fileNames);
-    void downloadfile();
-    void printFile();
     void previewFile();
 
 signals:

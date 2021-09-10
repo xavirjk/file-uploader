@@ -66,20 +66,11 @@ void DownloadPane::fetchFiles(QJsonArray &fileNames){
     scrollArea->setWidget(scrollWidget);
     implementation->mainL->addWidget(scrollArea);
 }
-
-void DownloadPane::downloadfile(){
-    qDebug()<<"Downloading file";
-}
-
-void DownloadPane::printFile(){
-    qDebug()<<"Printing File";
-}
 void DownloadPane::previewFile(){
   QWidget *ww = implementation->grid->parentWidget();
   QList<QPushButton *> allPushButtons = ww->findChildren<QPushButton *>();
   for(int i = 0; i < allPushButtons.size(); i++){
       if(allPushButtons[i]->hasFocus()) {
-          qDebug()<<"i:"<<allPushButtons[i]->property("source");
           QString file = QVariant(allPushButtons[i]->property("source")).toString();
           emit navigateViewFile(file);
           break;

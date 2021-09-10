@@ -23,13 +23,13 @@ public:
 
     void setUpHome();
 signals:
-    void moviesBtnClicked();
-    void tvShowBtcClicked();
-    void booksBtnClicked();
+    void uploadBtnClicked();
+    void downloadBtcClicked();
+    void homeBtnClicked();
 public slots:
-    void toggleMoviesView();
-    void toggleTvShowView();
-    void toggleBooksView();
+    void toggleUploadView();
+    void toggleDownloadView();
+    void toggleHomeView();
     void theForm(QString &text );
     void viewFile(const QString &path);
     void sendFiles(QString &selected);

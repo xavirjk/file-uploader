@@ -1,6 +1,4 @@
 #include "homepane.h"
-
-#include <QtDebug>
 namespace upld {
 namespace ui {
 
@@ -70,12 +68,10 @@ HomePane::HomePane(QWidget *parent) : QWidget(parent)
     setLayout(vbox);
 }
 void HomePane::generatePCODEBtnClicked(){
-    qDebug()<<"emitting";
     emit PCODEtoCreate(input1->text(), input2->text());
 
 }
 void HomePane::setCodeBtnClicked(){
-    qDebug()<<"clicked";
     emit addCode(input4->text(),input3->text());
 }
 HomePane::~HomePane(){}

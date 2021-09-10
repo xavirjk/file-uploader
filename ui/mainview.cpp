@@ -1,6 +1,5 @@
 #include "mainview.h"
 #include <QTableView>
-#include <QDebug>
 #include <QFontDatabase>
 using namespace upld::ui;
 
@@ -8,7 +7,6 @@ Mainview::Mainview(QWidget *parent):
     QWidget(parent) {
     ;
     setUpHome();
-    //resize(500, 300);
     setMaximumSize(700,500);
     setWindowTitle(tr("CTLogue"));
 }
@@ -23,36 +21,35 @@ void Mainview::setUpHome(){
     QHBoxLayout *hbox = new QHBoxLayout;
     hbox2 = new QHBoxLayout;
     hbox3 = new QHBoxLayout;
-    QPushButton *moviesBtn = new QPushButton(tr("Movies"));
-    QPushButton *tvShowsBtn = new QPushButton(tr("Tv Shows"));
-    QPushButton *booksBtn = new QPushButton(tr("Books"));
+    QPushButton *upldBtn = new QPushButton(tr("Movies"));
+    QPushButton *dnldBtn = new QPushButton(tr("Tv Shows"));
+    QPushButton *homeBtn = new QPushButton(tr("Books"));
 
     homePane = new HomePane(this);
-    //downloadPane =  new DownloadPane(this,"download");
 
-    connect(moviesBtn,&QAbstractButton::clicked,this,&Mainview::toggleMoviesView);
-    connect(tvShowsBtn,&QAbstractButton::clicked,this,&Mainview::toggleTvShowView);
-    connect(booksBtn,&QAbstractButton::clicked,this,&Mainview::toggleBooksView);
+    connect(upldBtn,&QAbstractButton::clicked,this,&Mainview::toggleUploadView);
+    connect(dnldBtn,&QAbstractButton::clicked,this,&Mainview::toggleDownloadView);
+    connect(homeBtn,&QAbstractButton::clicked,this,&Mainview::toggleHomeView);
     connect(homePane, &HomePane::addCode, log, &CT_Logue::getPCODE);
     connect(homePane, &HomePane::PCODEtoCreate,log,&CT_Logue::generatePCODE);
     connect(log,&CT_Logue::fileNamesUpdated,this,&Mainview::filesReceived);
     connect(log, &CT_Logue::renderFile,this,&Mainview::fileDataReceived);
     connect(log, &CT_Logue::displayMessage, this, &Mainview::displayResMessage);
-    moviesBtn ->setProperty("class", "hdBtns");
-    tvShowsBtn ->setProperty("class","hdBtns");
-    booksBtn ->setProperty("class", "hdBtns");
+    upldBtn ->setProperty("class", "hdBtns");
+    dnldBtn ->setProperty("class","hdBtns");
+    homeBtn ->setProperty("class", "hdBtns");
     responseTag ->setProperty("class", "res");
 
-    moviesBtn ->setFont(font);
-    moviesBtn ->setText("\uf093");
-    tvShowsBtn ->setFont(font);
-    tvShowsBtn ->setText("\uf019");
-    booksBtn ->setFont(font);
-    booksBtn->setText("\uf083");
+    upldBtn ->setFont(font);
+    upldBtn ->setText("\uf093");
+    dnldBtn ->setFont(font);
+    dnldBtn ->setText("\uf019");
+    homeBtn ->setFont(font);
+    homeBtn->setText("\uf083");
 
-    hbox ->addWidget(moviesBtn);
-    hbox ->addWidget(tvShowsBtn);
-    hbox ->addWidget(booksBtn);
+    hbox ->addWidget(upldBtn);
+    hbox ->addWidget(dnldBtn);
+    hbox ->addWidget(homeBtn);
 
     hbox3->addWidget(responseTag);
     hbox2 ->addWidget(homePane);
@@ -66,7 +63,7 @@ void Mainview::setUpHome(){
     setLayout(mainLayout);
 }
 
-void Mainview::toggleMoviesView(){
+void Mainview::toggleUploadView(){
     hbox2 ->itemAt(0) ->widget()->setVisible(false);
     hbox2 ->removeWidget(hbox2->itemAt(0)->widget());
     pane = new viewPane(this,"upload");
@@ -76,18 +73,17 @@ void Mainview::toggleMoviesView(){
     return ;
 }
 
-void Mainview::toggleTvShowView(){
+void Mainview::toggleDownloadView(){
     hbox2 ->itemAt(0) ->widget()->setVisible(false);
     hbox2 ->removeWidget(hbox2->itemAt(0)->widget());
     downloadPane =  new DownloadPane(this,"download",&font);
     connect(downloadPane,&DownloadPane::navigateViewFile,this,&Mainview::viewFile);
-    /*connect(log,&CT_Logue::fileNamesUpdated,downloadPane,&DownloadPane::fetchFiles);*/
     hbox2 ->addWidget(downloadPane);
     log->fetchFiles();
     return;
 }
 
-void Mainview::toggleBooksView(){
+void Mainview::toggleHomeView(){
     hbox2 ->itemAt(0) ->widget()->setVisible(false);
     hbox2 ->removeWidget(hbox2->itemAt(0)->widget());
     homePane = new HomePane(this);
@@ -98,8 +94,6 @@ void Mainview::toggleBooksView(){
 }
 
 void Mainview::theForm(QString &text){
-
-    qDebug()<<"Emmited...";
     hbox2 ->removeWidget(pane);
     pane ->setVisible(false);
     log->downloadersList();
