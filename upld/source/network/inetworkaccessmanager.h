@@ -10,7 +10,7 @@
 
 
 
-namespace upld_lib{
+namespace upld{
 namespace network {
 
 class UPLD_EXPORT INetworkAccessManager: public QObject{

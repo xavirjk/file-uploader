@@ -7,7 +7,7 @@
 #include <QFrame>
 #include <QGraphicsView>
 #include <QScopedPointer>
-#include <CT_Logue_global.h>
+//#include <CT_Logue_global.h>
 
 namespace upld {
 namespace ui {

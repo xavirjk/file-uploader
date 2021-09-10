@@ -25,5 +25,5 @@ HEADERS += \
     mainview.h \
     viewfile.h
 
-LIBS += -L$$PWD/../builds/CT_Logue/debug -lCT_Logue
+LIBS += -L$$PWD/../build/upld/debug -lupld
 message(dt $$PWD)

@@ -1,6 +1,6 @@
 #include "networkaccessmanager.h"
 
-namespace upld_lib{
+namespace upld{
 namespace network {
 
 class NetworkAccessManager::Implementation {

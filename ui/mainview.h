@@ -10,7 +10,7 @@
 #include "viewfile.h"
 #include <model/ct_logue.h>
 
-using namespace CTLogue::Lib;
+using namespace upld::Lib;
 namespace upld {
 namespace ui {
 
