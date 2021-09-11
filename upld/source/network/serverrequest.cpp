@@ -150,7 +150,6 @@ void ServerRequest::sslErrors(const QList<QSslError> &errors){
     for(const auto& error : errors){
         sslError += error.errorString() + "\n";
     }
-    qDebug()<<"sslError"<<sslError;
     emit error(sslError);
 }
 

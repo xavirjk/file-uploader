@@ -1,5 +1,4 @@
 #include "ct_logue.h"
-#include <QDebug>
 #include <QUuid>
 #include <QJsonObject>
 #include <QJsonDocument>
