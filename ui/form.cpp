@@ -9,7 +9,6 @@ Forms::Forms(QWidget *parent, const QJsonArray &arr, QFont *f) :
 }
 
 void Forms::createForm(){
-   qDebug()<<"d"<<dList->begin()->toObject();
     layout = new QGridLayout;
     QVBoxLayout *layout2 = new QVBoxLayout;
     QPushButton *submit = new QPushButton("Submit");

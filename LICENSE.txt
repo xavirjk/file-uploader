@@ -1,0 +1,11 @@
+                              END-USER LICENSE AGREEMENT
+  CT_Logue file-uploader
+  Last updated: SEPTEMBER 18, 2021
+  Version 1 Copyright © 2021
+
+You are permitted to copy and distribute copies of this license document
+but changing it is not allowed
+   
+   1.)License
+
+                               END OF TERMS AND CONDITIONS
