@@ -2,5 +2,14 @@
     <qresource prefix = "/qss">
         <file alias = "default.qss">qss/default.qss</file>
         <file alias = "fontawesome.ttf">assets/fontawesome-webfont.ttf</file>
+        <file alias = "formore.jpg">assets/formore.jpg</file>
+        <file alias = "img1.jpg">assets/img1.jpg</file>
+        <file alias = "img2.jpg">assets/img2.jpg</file>
+        <file alias = "img3.jpg">assets/img3.jpg</file>
+        <file alias = "netflix.jpg">assets/netflix.jpg</file>
+        <file alias = "escape.jpg">assets/escape.jpg</file>
+        <file alias = "cold_war.jpg">assets/cold_war.jpg</file>
+        <file alias = "medLab.jpeg">assets/medLab.jpeg</file>
+        <file alias = "Books.jpeg">assets/Books.jpeg</file>
     </qresource>
 </RCC>

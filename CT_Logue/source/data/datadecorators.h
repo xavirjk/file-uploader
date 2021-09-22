@@ -2,10 +2,10 @@
 #define DATADECORATORS_H
 
 #include <QObject>
-#include <Upld_global.h>
+#include <CT_Logue_global.h>
 #include <QSharedPointer>
 
-namespace upld {
+namespace CTLogue {
 namespace data {
 class DataDecorators : public QObject
 {

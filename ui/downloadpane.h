@@ -7,7 +7,7 @@
 #include <QScrollBar>
 #include <QScrollArea>
 
-namespace upld {
+namespace CTLogue {
 namespace ui {
 class DownloadPane : public QWidget
 {
@@ -19,6 +19,8 @@ public:
 
 public slots:
     void fetchFiles(QJsonArray &fileNames);
+    void downloadfile();
+    void printFile();
     void previewFile();
 
 signals:

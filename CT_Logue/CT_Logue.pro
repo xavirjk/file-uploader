@@ -1,8 +1,8 @@
 QT += sql network
 
-TARGET = upld
+TARGET = CT_Logue
 TEMPLATE = lib
-DEFINES += UPLD_LIBRARY
+DEFINES += CT_LOGUE_LIBRARY
 
 CONFIG += c++11
 
@@ -26,7 +26,7 @@ SOURCES += \
     source/model/ct_logue.cpp
 
 HEADERS += \
-    source/Upld_global.h \
+    source/CT_Logue_global.h \
     source/controllers/db-controller.h \
     source/controllers/i-db-controller.h \
     source/data/datadecorators.h \
@@ -35,6 +35,7 @@ HEADERS += \
     source/network/iserverrequest.h \
     source/network/networkaccessmanager.h \
     source/network/serverrequest.h
+
 # Default rules for deployment.
 unix {
     target.path = /usr/lib

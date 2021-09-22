@@ -4,7 +4,7 @@
 #include <QWidget>
 #include <QtWidgets>
 #include <QLabel>
-namespace upld {
+namespace CTLogue {
 namespace ui {
 
 class HomePane : public QWidget

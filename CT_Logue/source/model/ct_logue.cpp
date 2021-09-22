@@ -1,11 +1,12 @@
 #include "ct_logue.h"
+#include <QDebug>
 #include <QUuid>
 #include <QJsonObject>
 #include <QJsonDocument>
 
-using namespace upld::network;
-using namespace upld::controllers;
-using namespace upld::Lib;
+using namespace CTLogue::network;
+using namespace CTLogue::controllers;
+using namespace CTLogue::Lib;
 class CT_Logue::Implementation{
 public:Implementation(CT_Logue *_ct_log):
         cT_Logue(_ct_log)

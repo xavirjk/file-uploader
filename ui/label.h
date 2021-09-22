@@ -4,7 +4,7 @@
 #include <QObject>
 #include <QtWidgets>
 
-namespace upld {
+namespace CTLogue {
 namespace ui {
 
 class viewPane : public QWidget {

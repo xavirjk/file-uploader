@@ -5,12 +5,12 @@
 #include <QJsonArray>
 #include <QJsonObject>
 
-#include "Upld_global.h"
+#include "CT_Logue_global.h"
 
-namespace upld {
+namespace CTLogue {
 namespace controllers {
 
-class UPLD_EXPORT IDBController : public QObject {
+class CT_LOGUE_EXPORT IDBController : public QObject {
     Q_OBJECT
 public:
     IDBController(QObject *parent = nullptr):

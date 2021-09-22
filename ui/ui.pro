@@ -4,7 +4,7 @@ TARGET = ui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets core gui network
 
 qtHaveModule(printsupport): QT += printsupport
-INCLUDEPATH += ../upld/source
+INCLUDEPATH += ../CT_Logue/source
 
 SOURCES += \
     downloadpane.cpp \
@@ -25,5 +25,5 @@ HEADERS += \
     mainview.h \
     viewfile.h
 
-LIBS += -L$$PWD/../build/upld/debug -lupld
+LIBS += -L$$PWD/../build/CT_Logue/debug -lCT_Logue
 message(dt $$PWD)

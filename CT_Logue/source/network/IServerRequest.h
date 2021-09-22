@@ -3,12 +3,12 @@
 
 #include <QObject>
 #include <QUrl>
-#include <Upld_global.h>
+#include <CT_Logue_global.h>
 
-namespace upld {
+namespace CTLogue {
 namespace network {
 
-class UPLD_EXPORT IServerRequest: public QObject {
+class CT_LOGUE_EXPORT IServerRequest: public QObject {
     Q_OBJECT
 public:
     IServerRequest(QObject *parent = nullptr):

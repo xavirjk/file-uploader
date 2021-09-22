@@ -4,13 +4,13 @@
 #include <QObject>
 #include <QScopedPointer>
 #include <QNetworkAccessManager>
-#include <Upld_global.h>
+#include <CT_Logue_global.h>
 #include "network/inetworkaccessmanager.h"
 
-namespace upld {
+namespace CTLogue {
 namespace network {
 
-class UPLD_EXPORT NetworkAccessManager :public INetworkAccessManager
+class CT_LOGUE_EXPORT NetworkAccessManager :public INetworkAccessManager
 {
     Q_OBJECT
 public:

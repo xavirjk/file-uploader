@@ -5,7 +5,7 @@
 #include <QtWidgets>
 #include <QJsonArray>
 
-namespace upld {
+namespace CTLogue {
 namespace ui {
 
 class Forms: public QWidget {

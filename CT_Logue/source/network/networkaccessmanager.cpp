@@ -1,6 +1,6 @@
 #include "networkaccessmanager.h"
 
-namespace upld{
+namespace CTLogue{
 namespace network {
 
 class NetworkAccessManager::Implementation {

@@ -1,5 +1,5 @@
 #include "label.h"
-using namespace upld::ui;
+using namespace CTLogue::ui;
 
 viewPane::viewPane(QWidget *parent, const QString &text):
     QWidget(parent) {
@@ -37,6 +37,7 @@ viewPane::viewPane(QWidget *parent, const QString &text):
 }
 
 void viewPane::openFile(){
+    qDebug()<<"Button clicked";
     fileNames = QFileDialog::getOpenFileNames(0,QString(),QString(),
                                                     tr("Files(*.png *.xpm *.jpg *.pdf .*doc .*docx .*xps)"));
     int files = fileNames.length();
@@ -53,6 +54,7 @@ void viewPane::openFile(){
 
 
 void viewPane::requestForm() {
+    qDebug()<<"Emitting data";
     emit requestFormBtnClicked(*_text);
 }
 

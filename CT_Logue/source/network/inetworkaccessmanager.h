@@ -6,14 +6,14 @@
 #include <QNetworkReply>
 
 
-#include "Upld_global.h"
+#include "CT_Logue_global.h"
 
 
 
-namespace upld{
+namespace CTLogue{
 namespace network {
 
-class UPLD_EXPORT INetworkAccessManager: public QObject{
+class CT_LOGUE_EXPORT INetworkAccessManager: public QObject{
     Q_OBJECT
 public:
     INetworkAccessManager(QObject *parent = nullptr):

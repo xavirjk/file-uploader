@@ -1,5 +1,5 @@
 #include "form.h"
-using namespace upld::ui;
+using namespace CTLogue::ui;
 
 Forms::Forms(QWidget *parent, const QJsonArray &arr, QFont *f) :
     QWidget(parent) {
@@ -9,6 +9,7 @@ Forms::Forms(QWidget *parent, const QJsonArray &arr, QFont *f) :
 }
 
 void Forms::createForm(){
+   qDebug()<<"d"<<dList->begin()->toObject();
     layout = new QGridLayout;
     QVBoxLayout *layout2 = new QVBoxLayout;
     QPushButton *submit = new QPushButton("Submit");

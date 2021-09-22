@@ -10,8 +10,8 @@
 #include "viewfile.h"
 #include <model/ct_logue.h>
 
-using namespace upld::Lib;
-namespace upld {
+using namespace CTLogue::Lib;
+namespace CTLogue {
 namespace ui {
 
 
@@ -23,13 +23,13 @@ public:
 
     void setUpHome();
 signals:
-    void uploadBtnClicked();
-    void downloadBtcClicked();
-    void homeBtnClicked();
+    void moviesBtnClicked();
+    void tvShowBtcClicked();
+    void booksBtnClicked();
 public slots:
-    void toggleUploadView();
-    void toggleDownloadView();
-    void toggleHomeView();
+    void toggleMoviesView();
+    void toggleTvShowView();
+    void toggleBooksView();
     void theForm(QString &text );
     void viewFile(const QString &path);
     void sendFiles(QString &selected);

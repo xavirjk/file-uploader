@@ -1,7 +1,7 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
-    upld \
+    CT_Logue \
     ui
 
 

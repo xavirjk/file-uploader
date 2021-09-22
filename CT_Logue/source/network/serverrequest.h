@@ -9,14 +9,14 @@
 #include <QUrlQuery>
 #include <QHttpMultiPart>
 #include <QHttpPart>
-#include "Upld_global.h"
+#include "CT_Logue_global.h"
 #include "network/IServerRequest.h"
 #include "network/inetworkaccessmanager.h"
 
-namespace upld{
+namespace CTLogue{
 namespace network {
 
-class UPLD_EXPORT ServerRequest : public IServerRequest
+class CT_LOGUE_EXPORT ServerRequest : public IServerRequest
 {
     Q_OBJECT
 public:

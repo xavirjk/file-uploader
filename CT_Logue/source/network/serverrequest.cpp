@@ -1,6 +1,6 @@
 #include "serverrequest.h"
 #include "QJsonDocument"
-namespace upld {
+namespace CTLogue {
 namespace network {
 class ServerRequest::Implementation {
 public:Implementation(ServerRequest *_serverRequest, INetworkAccessManager *_networkAccessManager, const QUrl &_uri):
@@ -150,6 +150,7 @@ void ServerRequest::sslErrors(const QList<QSslError> &errors){
     for(const auto& error : errors){
         sslError += error.errorString() + "\n";
     }
+    qDebug()<<"sslError"<<sslError;
     emit error(sslError);
 }
 

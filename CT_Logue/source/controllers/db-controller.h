@@ -5,11 +5,11 @@
 #include <QScopedPointer>
 
 #include "i-db-controller.h"
-#include "Upld_global.h"
+#include "CT_Logue_global.h"
 
-namespace upld {
+namespace CTLogue {
 namespace controllers {
-class UPLD_EXPORT DBController : public IDBController {
+class CT_LOGUE_EXPORT DBController : public IDBController {
     Q_OBJECT
 public:
     DBController(QObject *parent = nullptr);

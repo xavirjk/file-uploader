@@ -5,16 +5,16 @@
 #include <QJsonObject>
 #include <QVariant>
 #include <QScopedPointer>
-#include "Upld_global.h"
+#include "CT_Logue_global.h"
 #include "controllers/db-controller.h"
 #include "network/serverrequest.h"
 #include "network/networkaccessmanager.h"
 #include "data/datadecorators.h"
 
-namespace upld {
+namespace CTLogue {
 namespace Lib {
 
-class UPLD_EXPORT CT_Logue : public data::DataDecorators
+class CT_LOGUE_EXPORT CT_Logue : public data::DataDecorators
 {
     Q_OBJECT
 

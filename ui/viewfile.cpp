@@ -9,7 +9,7 @@
 #endif
 #include <QPdfWriter>
 #include <QPainter>
-using namespace upld::ui;
+using namespace CTLogue::ui;
 
 class ViewFile::Implementation{
 public: Implementation(ViewFile *_viewFile, const QString &_resource,QFont *f = nullptr ):

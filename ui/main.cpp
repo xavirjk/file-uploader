@@ -3,7 +3,7 @@
 #include "mainview.h"
 #include <iostream>
 using namespace std;
-using namespace  upld::ui;
+using namespace  CTLogue::ui;
 
 int main (int argc, char *argv[]) {
     QApplication app(argc, argv);

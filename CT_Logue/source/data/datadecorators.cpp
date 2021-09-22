@@ -1,7 +1,7 @@
 #include "datadecorators.h"
 #include <QUuid>
 
-using namespace upld::data;
+using namespace CTLogue::data;
 class DataDecorators::Implementation {
 public: Implementation(DataDecorators *_dataDecoarator):
         dataDecorator(_dataDecoarator)
