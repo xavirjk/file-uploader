@@ -8,6 +8,10 @@ public: Implementation(DataDecorators *_dataDecoarator):
     {}
     DataDecorators *dataDecorator{nullptr};
     QByteArray keyId = "U[#I`V.26\\CJ}*^9%7Z-_3TW$)Y;K]DX(FH4P?QM/A8SN:'0<@=!GL5>&+OR1{B,E|";
+    /**
+     * create a secret key
+     *
+     */
     QString LETTERS = "!#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`{|}";
     QByteArray id = "";
     QString translated;

@@ -17,6 +17,8 @@ SOURCES += \
 
 RESOURCES = stylesheet.qrc
 
+RC_ICONS = icon.ico
+
 HEADERS += \
     downloadpane.h \
     form.h \
