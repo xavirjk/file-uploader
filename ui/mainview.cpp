@@ -1,6 +1,5 @@
 #include "mainview.h"
 #include <QTableView>
-#include <QDebug>
 #include <QFontDatabase>
 using namespace CTLogue::ui;
 
@@ -97,7 +96,6 @@ void Mainview::toggleHomeView(){
 
 void Mainview::theForm(QString &text){
 
-    qDebug()<<"Emmited...";
     hbox2 ->removeWidget(pane);
     pane ->setVisible(false);
     log->downloadersList();

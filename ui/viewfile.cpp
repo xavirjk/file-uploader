@@ -4,7 +4,6 @@
 #if QT_CONFIG(printdialog)
 #include <QPrinter>
 #include <QPrintDialog>
-
 #endif
 #endif
 #include <QPdfWriter>
